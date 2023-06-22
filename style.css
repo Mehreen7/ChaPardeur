@@ -1,6 +1,272 @@
-:root{
+:root {
    --white-color: #F7F9F8;
    --beige-color: #E9B99A;
    --pink-color: #EE9C9D;
    --purple-color: #AF6B8F;
+}
+
+*,
+*::after,
+*::before {
+   box-sizing: border-box;
+}
+
+body {
+   margin: 0;
+   font-family: "ABeeZee", sans-serif;
+}
+
+.wrapper {
+   max-width: auto;
+   margin: 0 auto;
+}
+
+/* Mes composants */
+.btn-pink {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: row;
+   background: var(--pink-color);
+   border-radius: 20px;
+   color: var(--white-color);
+   border-style: none;
+}
+
+.btn-pink.xl {
+   padding: 15px;
+   gap: 15px;
+   width: 350px;
+   height: 70px;
+   box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.25);
+   font-size: 30px;
+   line-height: 35px;
+}
+
+.btn-pink.small {
+   padding: 10px;
+   gap: 10px;
+   width: 176px;
+   height: 44px;
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+   font-size: 20px;
+   line-height: 24px;
+}
+
+.btn-beige {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: row;
+   background: var(--beige-color);
+   border-radius: 20px;
+   color: var(--white-color);
+   padding: 15px;
+   gap: 15px;
+   width: 350px;
+   height: 70px;
+   box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.25);
+   font-size: 30px;
+   line-height: 35px;
+   border-style: none;
+}
+
+/* Fin de mes composants */
+
+/* Navbar */
+nav {
+   background-color: #E9B99A;
+   height: 104px;
+   display: flex;
+   justify-content: space-between;
+}
+
+nav .logo {
+   display: flex;
+   align-items: center;
+   gap: 15px;
+   width: 102px;
+   height: 73px;
+   left: 68px;
+   top: 24px;
+   margin-top: 16px;
+
+   font-family: 'Lora';
+   font-weight: 700;
+   font-size: 32px;
+   color: var(--white-color);
+}
+
+nav ul {
+   display: flex;
+   align-items: center;
+   gap: 34px;
+   margin-right: 52px;
+   list-style: none;
+
+}
+
+nav ul li a {
+   font-family: 'Fira Sans';
+   font-weight: 400;
+   font-size: 24px;
+   text-decoration: none;
+   color: var(--white-color);
+}
+
+/* Fin de Navbar */
+
+/* Header */
+header img {
+   width: 100%;
+   max-height: 445px;
+}
+
+header .card {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   padding: 11px 0px;
+   gap: 10px;
+
+   position: absolute;
+   width: 365px;
+   height: 180px;
+   left: 122px;
+   top: 263px;
+
+   background: var(--white-color);
+   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+   border-radius: 13px;
+
+
+   font-weight: 400;
+   font-size: 24px;
+   text-align: center;
+}
+
+/* Fin de Header */
+
+/* Section demande de don */
+.demande-don {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   padding: 50px 0px 62px;
+   gap: 70px;
+
+}
+
+.large-text {
+   font-weight: 400;
+   font-size: 36px;
+   text-align: center;
+}
+
+.small-text {
+   font-weight: 400;
+   font-size: 32px;
+   line-height: 38px;
+   text-align: center;
+}
+
+.small-text span {
+   font-size: 24px;
+}
+
+.button-don {
+   display: flex;
+   flex-direction: row;
+   align-items: flex-start;
+   padding: 0px;
+   gap: 70px;
+}
+
+/* Fin de la section demande de don */
+
+/* Section Nos actions au quotidien */
+.nos-actions {
+   background-image: url("images/nos-actions.png");
+   width: 100%;
+   max-height: 610px;
+}
+
+.nos-actions h2 {
+   font-family: 'Lora';
+   font-weight: 700;
+   font-size: 64px;
+   text-align: center;
+   padding-top: 29px;
+   color: var(--white-color);
+}
+
+.nos-actions-body {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 0px 101px 97px 101px;
+}
+
+.actions-left {
+   font-size: 32px;
+   color: var(--white-color);
+   text-align: justify;
+}
+
+.actions-right {
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   gap: 82px;
+
+}
+
+/* Fin de la section Nos actions au quotidien */
+
+/* Footer */
+footer {
+   font-size: 32px;
+   color: var(--white-color);
+}
+
+.footer-top {
+   background: var(--beige-color);
+
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 0px 101px 0px 101px;
+}
+
+.footer-left ul{
+   list-style: none;
+   text-align: center;
+
+}
+
+.footer-left ul li{
+   padding-bottom: 10px;
+}
+
+.footer-left ul li a {
+   text-decoration: none;
+   color: var(--white-color);
+}
+
+.footer-right{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.icon img{
+   padding-right: 27px;
+}
+
+.footer-bottom {
+   background: var(--pink-color);
+   padding: 1px 0px 1px 0px;
+   text-align: center;
 }
